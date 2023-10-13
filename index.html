@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .header {
-                background-color: rgb(25, 167, 233);
-                color: white;
-                padding: 30px 0;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">This is my header</div>
-        <div>This is my Navigation menu</div>
-        <div>This is my Left Content menu/area</div>
-        <div>This is my Main Content area</div>
-        <div>This is my Main Right Content area</div>
-        <div>This is my header</div>
-    </body>
+<head>
+    <style>
+        .header {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navMenu {
+            margin-top: 55px;
+            padding: 0;
+        }
+
+        .navMenu li {
+            display: inline-block;
+            padding: 20px 15px;
+        }
+
+        .navMenu li:hover {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        This is my header
+    </div>
+    <div>
+        <ul class="navMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Posts</a></li>
+        </ul>
+    </div>
+    <div>This is my Left Content menu/area</div>
+    <div>This is my Main Content area</div>
+    <div>This is my Main Right Content area</div>
+    <div>This is my header</div>
+</body>
+
 </html>
