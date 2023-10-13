@@ -8,12 +8,10 @@
         .header {
             background-color: rgb(29, 29, 29);
             color: rgb(255, 255, 255);
-            padding: 20px 0;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            text-align: center;
         }
 
         .navMenu {
@@ -57,12 +55,30 @@
             display: table;
             clear: both;
         }
+
+        .header ul {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .header ul li:hover {
+            background-color: rgb(199, 198, 198);
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        This is my header
+        <ul>
+            <li>Brand1</li>
+            <li>Brand2</li>
+            <li>Brand3</li>
+        </ul>
     </div>
     <div>
         <ul class="navMenu">
