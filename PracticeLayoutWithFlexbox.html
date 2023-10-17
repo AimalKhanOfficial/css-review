@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*Keeping footer at the bottom of the screen:
+            https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+        */
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .Site-content {
+            flex: 1;
+        }
+
+        .header {
+            width: 100%;
+            color: white;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 35px 0;
+        }
+
+        /*for Nav bar*/
+        @media screen and (max-width: 950px) {
+            .navBar {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navBar>p {
+                text-align: center;
+                height: 5px;
+                
+            }
+
+            .navBar>p:hover {
+                background-color: aquamarine;
+            }
+        }
+
+        .navBar {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .navBar>p {
+            margin: 0;
+            padding: 15px 0;
+        }
+
+        .navBar>p>a {
+            height: 50px;
+            padding: 15px 0;
+            margin: 5px;
+        }
+
+        .navBar>p :hover {
+            color: gray;
+            background-color: aqua;
+        }
+
+        /*Nav Bar Styling ends herer*/
+
+        .col1 {
+            background-color: darkseagreen;
+            flex: 30%;
+            margin: 1px;
+            height: 300px;
+            padding: 120px 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .col2 {
+            background-color: rgb(54, 177, 136);
+            flex: 70%;
+            margin: 1px;
+            padding: 120px 0;
+            text-align: center;
+            box-sizing: border-box;
+            height: 300px;
+        }
+
+        .footer {
+            margin-top: auto;
+            flex: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            background-color: black;
+        }
+
+        .footerCol {
+            text-align: center;
+            color: white;
+            height: auto;
+        }
+
+        .footer__colOption {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer__colOption>span {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="Site-content">
+        <div class="header">
+            This is my header
+        </div>
+        <div class="navBar">
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Profile</a></p>
+            <p><a href="#">Reels</a></p>
+            <p><a href="#">Profile</a></p>
+            <p><a href="#">MarketPlace</a></p>
+            <p><a href="#">Posts</a></p>
+            <p><a href="#">Topics</a></p>
+            <p><a href="#">Chats</a></p>
+            <p><a href="#">Friends</a></p>
+            <p><a href="#">Connections</a></p>
+            <p><a href="#">Requests</a></p>
+            <p><a href="#">Notifications</a></p>
+        </div>
+        <div style="display: flex;">
+            <div class="col1">
+                This is my col1
+            </div>
+            <div class="col2">
+                This is my col2
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerCol">
+                <h4>All Rights Reserved.</h4>
+            </div>
+            <div class="footerCol">
+                <h4>About</h4>
+                <div class="footer__colOption">
+                    <span>About1</span>
+                    <span>About2</span>
+                    <span>About3</span>
+                    <span>About4</span>
+                </div>
+            </div>
+            <div class="footerCol">
+                <h4>What we do</h4>
+                <div class="footer__colOption">
+                    <span>WWD1</span>
+                    <span>WWD2</span>
+                    <span>WWD3</span>
+                    <span>WWD4</span>
+                </div>
+            </div>
+            <div class="footerCol">
+                <h4>What we do</h4>
+                <div class="footer__colOption">
+                    <span>WWD1</span>
+                    <span>WWD2</span>
+                    <span>WWD3</span>
+                    <span>WWD4</span>
+                </div>
+            </div>
+            <div class="footerCol">
+                <h4>Rewards</h4>
+                <div class="footer__colOption">
+                    <span>Rewards1</span>
+                    <span>Rewards2</span>
+                    <span>Rewards3</span>
+                    <span>Rewards4</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
